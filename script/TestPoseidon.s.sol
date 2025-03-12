@@ -13,7 +13,7 @@ contract TestPoseidonScript is Script {
         vm.startBroadcast();
 
         testPoseidon = new TestPoseidon();
-        uint result = testPoseidon.combine(0, 0);
+        uint256 result = testPoseidon.combine(0, 0);
         console.logUint(result);
 
         vm.stopBroadcast();

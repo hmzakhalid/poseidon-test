@@ -12,9 +12,9 @@ contract TestPoseidonTest is Test {
     }
 
     function test_Combine() public view {
-        uint input0 = 123;
-        uint input1 = 456;
-        uint result = testPoseidon.combine(input0, input1);
+        uint256 input0 = 123;
+        uint256 input1 = 456;
+        uint256 result = testPoseidon.combine(input0, input1);
         console.logUint(result);
     }
 }
